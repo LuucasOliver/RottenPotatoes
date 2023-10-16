@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="styleCa.css">
+</head>
+<body>
+    <div class="main-cadastro">
+        <div class="card-login">
+            <h1>Faça seu cadastro</h1>
+            <form action="https://webhook.site/4ee6ab16-a0f5-45a2-8c86-d17e9cc56186" method="post">
+                <div class="textfield">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Nome">
+                </div>
+        
+                <div class="textfield">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="E-mail">
+                </div>
+        
+                <div class="textfield">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required placeholder="Senha">
+                </div>
+
+                <div class="textfield">
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" min="18" required placeholder="Idade">
+                </div>
+        
+                <div class="textfield">
+                    <label for="genero">Gênero:</label>
+                    <select id="genero" name="genero" required>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+
+                <button class="btn-login">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
