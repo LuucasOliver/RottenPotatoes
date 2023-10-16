@@ -7,3 +7,11 @@ O projeto se trata de uma página web onde os usuários são capazes de realizar
 ## Requisitos
 
 Acesso a internet
+
+##Criadores
+Integrantes:
+Nome: Fernando Ferreira da Silva RA: 202208700195
+Nome: Matheus da Cunha Marques RA: 202208700276
+Nome: Lucas Guthierrez Oliver RA: 202208700292
+Nome: Tonislau Quissanga RA: 202208700519
+Nome: Kesley Bryan Valentin RA: 202208700349
