@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Avaliação de Filmes</title>
+    <style>
+        .main-avaliacao {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            max-height: 80vh;
+            overflow-y: auto;
+            justify-items: center;
+        }
+
+        .card-filme {
+            background: #2f2841;
+            border-radius: 20px;
+            box-shadow: 0px 10px 40px #00000056;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="batata.png" width="50"/>
+        <h1><a href="#">RottenPotatoes</a></h1>
+        <nav>
+            <ul>
+                <li><a href="SobreNós.html">Sobre Nós</a></li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-avaliacao">
+        <div class="card-filme" id="filme1">
+            <h2>A Origem</h2>
+            <p>Dom Cobb é um ladrão habilidoso que rouba segredos do subconsciente durante o sono. Ele é oferecido a chance de se redimir ao plantar uma ideia na mente de um herdeiro de um império. Com a ajuda de sua equipe, ele corre contra o tempo para realizar esse crime complexo antes que o inimigo descubra seus planos.</p>
+            <img src="A Origem.jpg" width="150"/>
+            <button class="btn-like" onclick="handleRating('filme1', 'Gostei')">Gostei</button>
+            <button class="btn-dislike" onclick="handleRating('filme1', 'Não Gostei')">Não Gostei</button>
+            <textarea class="textarea-comentario" placeholder="Deixe um comentário..."></textarea>
+        </div>
+
+        <div class="card-filme" id="filme2">
+            <h2>Cidade de Deus</h2>
+            <p>Buscapé, um jovem negro e sensível da Cidade de Deus, uma favela carioca violenta, teme se tornar um bandido. No entanto, sua habilidade como fotógrafo o salva do destino esperado, permitindo-lhe seguir uma carreira na profissão. Através de sua câmera, ele documenta a vida na favela, revelando a aparentemente interminável violência que a cerca.</p>
+            <img src="City of God.jpg" width="150"/>
+            <button class="btn-like" onclick="handleRating('filme2', 'Gostei')">Gostei</button>
+            <button class="btn-dislike" onclick="handleRating('filme2', 'Não Gostei')">Não Gostei</button>
+            <textarea class="textarea-comentario" placeholder="Deixe um comentário..."></textarea>
+        </div>
+
+        <div class="card-filme" id="filme3">
+            <h2>A vida é Bela</h2>
+            <p>Durante a Segunda Guerra Mundial na Itália, o judeu Guido e seu filho Giosué são levados para um campo de concentração nazista. Afastado da mulher, ele precisa usar sua imaginação para fazer o menino acreditar que estão participando de uma grande brincadeira, com o intuito de protegê-lo do terror e da violência ao redor.</p>
+            <img src="A Vida é Bela.jpg" width="150"/>
+            <button class="btn-like" onclick="handleRating('filme3', 'Gostei')">Gostei</button>
+            <button class="btn-dislike" onclick="handleRating('filme3', 'Não Gostei')">Não Gostei</button>
+            <textarea class="textarea-comentario" placeholder="Deixe um comentário..."></textarea>
+        </div>
+
+        <div class="card-filme" id="filme4">
+            <h2>Jurassic Park</h2>
+            <p>Os paleontólogos Alan Grant, Ellie Sattler e o matemático Ian Malcolm fazem parte de um seleto grupo escolhido para visitar uma ilha habitada por dinossauros criados a partir de DNA pré-histórico. O idealizador do projeto e bilionário John Hammond garante a todos que a instalação é completamente segura. Mas após uma queda de energia, os visitantes descobrem, aos poucos, que vários predadores ferozes estão soltos e à caça.</p>
+            <img src="Jurassic Park.jpg" width="150"/>
+            <button class="btn-like" onclick="handleRating('filme4', 'Gostei')">Gostei</button>
+            <button class="btn-dislike" onclick="handleRating('filme4', 'Não Gostei')">Não Gostei</button>
+            <textarea class="textarea-comentario" placeholder="Deixe um comentário..."></textarea>
+        </div>
+
+        <div class="card-filme" id="filme5">
+            <h2>O Farol</h2>
+            <p>No final do século 19, um novo zelador chega a uma remota ilha na Nova Inglaterra para ajudar o faroleiro local, mas o isolamento causa tensão na convivência entre os dois homens. Entre tempestades e goles de querosene, o novato tenta desvendar os mistérios que existem nas histórias de pescador de seu chefe.</p>
+            <img src="O Farol.png" width="150"/>
+            <button class="btn-like" onclick="handleRating('filme5', 'Gostei')">Gostei</button>
+            <button class="btn-dislike" onclick="handleRating('filme5', 'Não Gostei')">Não Gostei</button>
+            <textarea class="textarea-comentario" placeholder="Deixe um comentário..."></textarea>
+        </div>
+
+        <div class="card-filme" id="filme6">
+            <h2>Pantera negra</h2>
+            <p>Conheça a história de T'Challa, príncipe do reino de Wakanda, que perde o seu pai e viaja para os Estados Unidos, onde tem contato com os Vingadores. Entre as suas habilidades estão a velocidade, inteligência e os sentidos apurados.</p>
+            <img src="Pantera negra.jpg" width="150"/>
+            <button class="btn-like" onclick="handleRating('filme6', 'Gostei')">Gostei</button>
+            <button class="btn-dislike" onclick="handleRating('filme6', 'Não Gostei')">Não Gostei</button>
+            <textarea class="textarea-comentario" placeholder="Deixe um comentário..."></textarea>
+        </div>
+
+        <div class="card-filme" id="filme7">
+            <h2>A vida é Bela</h2>
+            <p>Década de 60. Em meio aos grandes conflitos políticos e transformações sociais dos Estados Unidos da Guerra Fria, a muda Elisa, zeladora em um laboratório experimental secreto do governo, se encanta com uma criatura fantástica mantida presa e maltratada no local. Para executar um arriscado e apaixonado resgate, ela recorre ao melhor amigo Giles e à colega de turno Zelda, em uma aventura que pode custar muito mais do que o seu emprego.</p>
+            <img src="A Vida é Bela.jpg" width="150"/>
+            <button class="btn-like" onclick="handleRating('filme7', 'Gostei')">Gostei</button>
+            <button class="btn-dislike" onclick="handleRating('filme7', 'Não Gostei')">Não Gostei</button>
+            <textarea class="textarea-comentario" placeholder="Deixe um comentário..."></textarea>
+        </div>
+
+        <div class="card-filme" id="filme8">
+            <h2>Quem ser um milinario?</h2>
+            <p>Jamal Malik é um rapaz de 18 anos que teve uma infância muito difícil, lidando com a violência e a miséria na Índia. Ele é chamado para participar da versão indiana do famoso programa de TV "Quem quer ser um milionário?" e sua experiência de vida o ajuda a responder as perguntas do show. Porém a polícia desconfia da honestidade de Jamal, que deve provar sua inocência.</p>
+            <img src="Quem quer ser um milionário.jpg" width="150"/>
+            <button class="btn-like" onclick="handleRating('filme8', 'Gostei')">Gostei</button>
+            <button class="btn-dislike" onclick="handleRating('filme8', 'Não Gostei')">Não Gostei</button>
+            <textarea class="textarea-comentario" placeholder="Deixe um comentário..."></textarea>
+        </div>
+    </div>
+
+    <script>
+        function handleRating(filmeId, rating) {
+            const textarea = document.querySelector(`#${filmeId} .textarea-comentario`);
+            
+            alert(`Você deu um ${rating} para o filme ${filmeId} e comentou: ${textarea.value}`);
+        }
+    </script>
+</body>
+</html>

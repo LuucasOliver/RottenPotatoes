@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleIn.css">
+    <title> Login</title>
+</head>
+<body>
+<div class="main-login">
+    <div class="left-login">
+        <h1>Seja bem-vindo! <br>Faça o login...</h1>
+        <img src="logo.svg" class="left-login-image" alt="logo animação">
+    </div>
+    <div class="right-login">
+        <div class="card-login">
+            <h1>LOGIN</h1>
+            <div class="textfield">
+                <label for="usuario">Usuario</label>
+                <input type="text" name="usuario" placeholder="Usuário">
+            </div>
+            <div class="textfield">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" placeholder="Senha">
+            </div>
+            <a href="cadastro.html" class="cadastro-link">Faça seu cadastro</a>
+            <button class="btn-login">Login</button>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const loginForm = document.querySelector('.card-login');
+
+        const loginButton = document.querySelector('.btn-login');
+        loginButton.addEventListener('click', function (event) {
+            event.preventDefault();
+            const usuarioInput = document.querySelector('input[name="usuario"]');
+            const senhaInput = document.querySelector('input[name="senha"]');
+
+            if (usuarioInput.value.trim() === '' || senhaInput.value.trim() === '') {
+                alert('Por favor, preencha todos os campos.');
+            } else {
+                alert('Autenticação bem-sucedida!');
+                
+                window.location.href = 'avaliacao.html';
+            }
+        });
+    });
+</script>
+</body>
+</html>
