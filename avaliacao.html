@@ -23,6 +23,22 @@
             padding: 20px;
             text-align: center;
         }
+
+        .search-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #search-input {
+            padding: 10px;
+            width: 300px;
+            font-size: 16px;
+        }
+
+        #search-button {
+            padding: 10px;
+            font-size: 16px;
+        }
     </style>
 </head>
 <body>
@@ -36,6 +52,11 @@
             </ul>
         </nav>
     </header>
+
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Pesquisar filmes...">
+        <button onclick="searchMovies()" id="search-button">Pesquisar</button>
+    </div>
 
     <div class="main-avaliacao">
         <div class="card-filme" id="filme1">
@@ -112,6 +133,22 @@
     </div>
 
     <script>
+        function searchMovies() {
+            const searchTerm = document.getElementById('search-input').value.toLowerCase();
+            const filmes = document.querySelectorAll('.card-filme');
+
+            filmes.forEach(filme => {
+                const titulo = filme.querySelector('h2').innerText.toLowerCase();
+                const descricao = filme.querySelector('p').innerText.toLowerCase();
+
+                if (titulo.includes(searchTerm) || descricao.includes(searchTerm)) {
+                    filme.style.display = 'block';
+                } else {
+                    filme.style.display = 'none';
+                }
+            });
+            
+        }
         function handleRating(filmeId, rating) {
             const textarea = document.querySelector(`#${filmeId} .textarea-comentario`);
             

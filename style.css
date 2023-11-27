@@ -141,3 +141,20 @@ nav ul li a:hover {
     background: #514869;
     box-shadow: 0px 10px 40px #00000056;
 }
+
+#search-button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    background: #2b134b;
+    color: #00ff88;
+    transition: background 0.3s, color 0.3s;
+}
+
+#search-button:hover {
+    background: #00cc77;
+    color: #fff;
+}
