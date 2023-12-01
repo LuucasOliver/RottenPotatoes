@@ -19,10 +19,6 @@ RA: 202208700519 <br><br>
 Nome: Kesley Bryan Valentin <br>
 RA: 202308395131 <br><br>
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
 ## Project Setup
 
 ```sh
