@@ -1,17 +1,35 @@
-# RottenPotatoes
-Esse projeto se trata de uma colaboração dos alunos da Unimetrocamp, que consiste em um site onde os usuários são capazes de realizar a avaliação de seus filmes.
-## Visão Geral
+# rottenPotatoes-ui
 
-O projeto se trata de uma página web onde os usuários são capazes de realizar a avaliação e tecer comentários sobre seus filmes, criando assim uma comunidade que estimula a cultura de avaliação e percepção das pessoas sobre cada filme assistido.
+This template should help get you started developing with Vue 3 in Vite.
 
-## Requisitos
+## Recommended IDE Setup
 
-Acesso a internet
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-##Criadores
-Integrantes:
-Nome: Fernando Ferreira da Silva RA: 202208700195
-Nome: Matheus da Cunha Marques RA: 202208700276
-Nome: Lucas Guthierrez Oliver RA: 202208700292
-Nome: Tonislau Quissanga RA: 202208700519
-Nome: Kesley Bryan Valentin RA: 202208700349
+## Customize configuration
+
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+## Project Setup
+
+```sh
+npm install
+```
+
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
+```
+
+### Compile and Minify for Production
+
+```sh
+npm run build
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+npm run lint
+```
